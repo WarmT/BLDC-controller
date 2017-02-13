@@ -1,0 +1,39 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP C
+D Unpolarized capacitor
+K cap capacitor
+$ENDCMP
+#
+$CMP D
+D Diode
+K diode
+$ENDCMP
+#
+$CMP D_Schottky
+D Schottky diode
+K diode Schottky
+$ENDCMP
+#
+$CMP L
+D Inductor
+K inductor choke coil reactor magnetic
+$ENDCMP
+#
+$CMP LED_ALT
+D LED generic, alternativ symbol
+K led diode
+$ENDCMP
+#
+$CMP PSMN2R0-30YLD
+D 30V Vds, 100A Id, N-Channel MOSFET, SOT-669
+K N-Channel MOSFET Logic Level
+F http://www.nxp.com/documents/data_sheet/PSMN2R0-30YLD.pdf
+$ENDCMP
+#
+$CMP R
+D Resistor
+K r res resistor
+$ENDCMP
+#
+#End Doc Library
