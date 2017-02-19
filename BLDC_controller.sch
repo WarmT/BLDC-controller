@@ -36,7 +36,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "BLDC CONTROLLER"
-Date "18.02.2017"
+Date "19.02.2017"
 Rev "0.2"
 Comp "Helsinki Hacklab"
 Comment1 "Tero Kapanen"
@@ -1143,7 +1143,7 @@ U 1 1 58A1FE98
 P 3700 2150
 F 0 "V9" V 3750 2000 50  0000 C CNN
 F 1 "LED_ALT" V 3650 1900 50  0000 C CNN
-F 2 "" H 3700 2150 50  0001 C CNN
+F 2 "project_footprints:LED_0402" H 3700 2150 50  0001 C CNN
 F 3 "" H 3700 2150 50  0000 C CNN
 	1    3700 2150
 	0    -1   -1   0   
@@ -1319,7 +1319,7 @@ U 1 1 58A239DA
 P 4500 1400
 F 0 "C18" H 4200 1450 50  0000 L CNN
 F 1 "220u" H 4150 1350 50  0000 L CNN
-F 2 "" H 4538 1250 50  0001 C CNN
+F 2 "project_footprints:C_Radial_D10_L25_P5" H 4538 1250 50  0001 C CNN
 F 3 "" H 4500 1400 50  0000 C CNN
 	1    4500 1400
 	1    0    0    -1  
@@ -1330,7 +1330,7 @@ U 1 1 58A23B0C
 P 5100 1400
 F 0 "C19" H 4750 1450 50  0000 L CNN
 F 1 "220u" H 4750 1350 50  0000 L CNN
-F 2 "" H 5138 1250 50  0001 C CNN
+F 2 "project_footprints:C_Radial_D10_L25_P5" H 5138 1250 50  0001 C CNN
 F 3 "" H 5100 1400 50  0000 C CNN
 	1    5100 1400
 	1    0    0    -1  
@@ -1363,7 +1363,7 @@ U 1 1 58A25D7D
 P 3100 2150
 F 0 "V10" V 3150 2350 50  0000 C CNN
 F 1 "LED_ALT" V 3050 2450 50  0000 C CNN
-F 2 "" H 3100 2150 50  0001 C CNN
+F 2 "project_footprints:LED_0402" H 3100 2150 50  0001 C CNN
 F 3 "" H 3100 2150 50  0000 C CNN
 	1    3100 2150
 	0    -1   -1   0   
@@ -1396,7 +1396,7 @@ U 1 1 58A28876
 P 3700 7200
 F 0 "P5" H 3700 7500 50  0000 C CNN
 F 1 "CONN_01X05" H 3900 6900 50  0000 C CNN
-F 2 "" H 3700 7200 50  0001 C CNN
+F 2 "project_footprints:PINHEAD1-5" H 3700 7200 50  0001 C CNN
 F 3 "" H 3700 7200 50  0000 C CNN
 	1    3700 7200
 	-1   0    0    -1  
@@ -2098,7 +2098,7 @@ U 1 1 58A604D6
 P 5600 4450
 F 0 "P2" H 5600 4800 50  0000 C CNN
 F 1 "CONN_01X06" H 5800 4100 50  0000 C CNN
-F 2 "" H 5600 4450 50  0001 C CNN
+F 2 "project_footprints:PINHEAD1-6" H 5600 4450 50  0001 C CNN
 F 3 "" H 5600 4450 50  0000 C CNN
 	1    5600 4450
 	-1   0    0    -1  
@@ -2184,17 +2184,6 @@ F 3 "" H 5350 3450 50  0000 C CNN
 	1    5350 3450
 	1    0    0    -1  
 $EndComp
-$Comp
-L Crystal Y1
-U 1 1 58AA45EE
-P 6250 3300
-F 0 "Y1" V 6200 3475 50  0000 C CNN
-F 1 "32M" V 6300 3550 50  0000 C CNN
-F 2 "" H 6250 3300 50  0001 C CNN
-F 3 "" H 6250 3300 50  0000 C CNN
-	1    6250 3300
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	6250 3150 6250 3100
 Wire Wire Line
@@ -2250,7 +2239,7 @@ U 1 1 58ACD9B4
 P 5600 5800
 F 0 "P3" H 5600 6100 50  0000 C CNN
 F 1 "CONN_01X05" H 5800 5500 50  0000 C CNN
-F 2 "" H 5600 5800 50  0001 C CNN
+F 2 "project_footprints:PINHEAD1-5" H 5600 5800 50  0001 C CNN
 F 3 "" H 5600 5800 50  0000 C CNN
 	1    5600 5800
 	-1   0    0    -1  
@@ -2379,4 +2368,17 @@ Text Notes 12300 8450 0    60   ~ 0
 15 A current through a sense resistor causes 2.25 W heat dissipation. \nHowever, none of the three sense resistor conducts 100% of the time.
 Text Notes 2150 3200 0    60   ~ 0
 AN2868 Application note - Oscillator design guide for STM32
+Text Label 6800 3100 0    60   ~ 0
+OSC_IN
+$Comp
+L Crystal G1
+U 1 1 58AD39C7
+P 6250 3300
+F 0 "G1" V 6200 3500 50  0000 C CNN
+F 1 "NX3225GD" V 6300 3650 50  0000 C CNN
+F 2 "project_footprints:Crystal_3225" H 6250 3300 50  0001 C CNN
+F 3 "" H 6250 3300 50  0000 C CNN
+	1    6250 3300
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

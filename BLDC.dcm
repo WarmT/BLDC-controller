@@ -5,6 +5,11 @@ D Unpolarized capacitor
 K cap capacitor
 $ENDCMP
 #
+$CMP Crystal
+D Two pin crystal
+K quartz ceramic resonator oscillator
+$ENDCMP
+#
 $CMP D
 D Diode
 K diode
