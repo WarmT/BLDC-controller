@@ -1,9 +1,9 @@
-(module BOURNS-SRN3015 (layer F.Cu) (tedit 58A0CA1C)
+(module BOURNS-SRN3015 (layer F.Cu) (tedit 58AD6846)
   (attr smd)
-  (fp_text reference REF** (at 0 0) (layer F.SilkS)
+  (fp_text reference REF** (at 0 -2.7) (layer F.SilkS)
     (effects (font (size 0.8 0.8) (thickness 0.15)))
   )
-  (fp_text value BOURNS-SRN3015 (at 0 0) (layer F.Fab) hide
+  (fp_text value BOURNS-SRN3015 (at 0 2.86) (layer F.Fab) hide
     (effects (font (size 0.8 0.8) (thickness 0.15)))
   )
   (fp_line (start 2 -2) (end -2 -2) (layer F.Fab) (width 0.15))

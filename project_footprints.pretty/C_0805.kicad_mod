@@ -1,9 +1,9 @@
-(module C_0805 (layer F.Cu) (tedit 58A0B2F4)
+(module C_0805 (layer F.Cu) (tedit 58AD6886)
   (descr "Capacitor SMD 0805, reflow soldering, AVX (see smccp.pdf)")
   (tags "capacitor 0805")
   (attr smd)
   (fp_text reference REF** (at 0 -2.1) (layer F.SilkS)
-    (effects (font (size 1 1) (thickness 0.15)))
+    (effects (font (size 0.8 0.8) (thickness 0.15)))
   )
   (fp_text value C_0805 (at 0 2.1) (layer F.Fab) hide
     (effects (font (size 1 1) (thickness 0.15)))

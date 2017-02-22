@@ -1,9 +1,9 @@
-(module R_2512 (layer F.Cu) (tedit 58A0B31D)
+(module R_2512 (layer F.Cu) (tedit 58AD6826)
   (descr "Resistor SMD 2512, reflow soldering, Vishay (see dcrcw.pdf)")
   (tags "resistor 2512")
   (attr smd)
-  (fp_text reference REF** (at 0 -2.75) (layer F.SilkS)
-    (effects (font (size 1 1) (thickness 0.15)))
+  (fp_text reference REF** (at 0 -2.72) (layer F.SilkS)
+    (effects (font (size 0.8 0.8) (thickness 0.15)))
   )
   (fp_text value R_2512 (at 0 2.85) (layer F.Fab) hide
     (effects (font (size 1 1) (thickness 0.15)))

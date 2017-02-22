@@ -1,9 +1,9 @@
-(module LED_0402 (layer F.Cu) (tedit 58A9E963)
+(module LED_0402 (layer F.Cu) (tedit 58AD68AC)
   (descr "LED 0402 smd package")
   (tags "LED led 0402 SMD smd SMT smt smdled SMDLED smtled SMTLED")
   (attr smd)
   (fp_text reference REF** (at 0 -1.45) (layer F.SilkS)
-    (effects (font (size 1 1) (thickness 0.15)))
+    (effects (font (size 0.8 0.8) (thickness 0.15)))
   )
   (fp_text value LED_0402 (at 0 1.55) (layer F.Fab) hide
     (effects (font (size 1 1) (thickness 0.15)))

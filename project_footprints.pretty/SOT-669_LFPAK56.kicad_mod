@@ -1,9 +1,9 @@
-(module SOT-669_LFPAK56 (layer F.Cu) (tedit 58A0B340)
+(module SOT-669_LFPAK56 (layer F.Cu) (tedit 58AD691E)
   (descr "LFPAK www.nxp.com/documents/leaflet/939775016838_LR.pdf")
   (tags "LFPAK SOT-669 Power-SO8")
   (attr smd)
   (fp_text reference REF** (at 0 -4.925) (layer F.SilkS)
-    (effects (font (size 1 1) (thickness 0.15)))
+    (effects (font (size 0.8 0.8) (thickness 0.15)))
   )
   (fp_text value SOT-669 (at 0 5.25) (layer F.Fab) hide
     (effects (font (size 1 1) (thickness 0.15)))
