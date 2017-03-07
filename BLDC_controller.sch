@@ -36,8 +36,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "BLDC CONTROLLER"
-Date "26.02.2017"
-Rev "0.3"
+Date "07.03.2017"
+Rev "1.0"
 Comp "Helsinki Hacklab"
 Comment1 "Tero Kapanen"
 Comment2 ""
