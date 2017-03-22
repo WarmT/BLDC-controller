@@ -36,7 +36,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "BLDC CONTROLLER"
-Date "07.03.2017"
+Date "22.3.2017"
 Rev "1.0"
 Comp "Helsinki Hacklab"
 Comment1 "Tero Kapanen"
@@ -1610,7 +1610,7 @@ Wire Wire Line
 Wire Wire Line
 	5350 2650 5350 2600
 Wire Wire Line
-	5825 2200 5350 2200
+	5350 2200 5825 2200
 Wire Wire Line
 	5350 2150 5350 2300
 Connection ~ 6550 2200
@@ -2195,8 +2195,8 @@ Wire Wire Line
 	6400 7800 6400 7900
 Text Notes 4900 5825 0    60   ~ 0
 SPI interface
-Text Notes 1000 1175 0    60   ~ 0
-12 V Battery
+Text Notes 750  1175 0    60   ~ 0
+12 V Battery\n(LiPo 3S 11.1 V)
 Text Notes 15450 4550 0    60   ~ 0
 BLDC motor
 Text Notes 13000 7750 0    60   ~ 0
@@ -2243,7 +2243,7 @@ Wire Wire Line
 Connection ~ 10900 6800
 Text Notes 12300 8450 0    60   ~ 0
 15 A current through a sense resistor causes 2.25 W heat dissipation. \nHowever, none of the three sense resistor conducts 100% of the time.
-Text Notes 2150 3200 0    60   ~ 0
+Text Notes 2450 3250 0    60   ~ 0
 AN2868 Application note - Oscillator design guide for STM32
 Text Label 6800 3100 0    60   ~ 0
 OSC_IN
@@ -2426,4 +2426,37 @@ Text Label 6000 6550 0    60   ~ 0
 PA2_LED
 Text Label 7200 6900 0    60   ~ 0
 PA2
+NoConn ~ 5800 4700
+$Comp
+L PWR_FLAG #FLG059
+U 1 1 58D32B00
+P 5675 2150
+F 0 "#FLG059" H 5675 2225 50  0001 C CNN
+F 1 "PWR_FLAG" H 5675 2300 50  0000 C CNN
+F 2 "" H 5675 2150 50  0001 C CNN
+F 3 "" H 5675 2150 50  0001 C CNN
+	1    5675 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5675 2150 5675 2200
+Connection ~ 5675 2200
+$Comp
+L PWR_FLAG #FLG060
+U 1 1 58D33188
+P 5725 2575
+F 0 "#FLG060" H 5725 2650 50  0001 C CNN
+F 1 "PWR_FLAG" H 5725 2725 50  0000 C CNN
+F 2 "" H 5725 2575 50  0001 C CNN
+F 3 "" H 5725 2575 50  0001 C CNN
+	1    5725 2575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5725 2575 5725 2625
+Wire Wire Line
+	5725 2625 5350 2625
+Connection ~ 5350 2625
+Text Notes 4075 975  0    60   ~ 0
+When the VM voltage is below to 12 V, the VM pin and the linear regulator \noutput can be shorted together providing the gate driver supply externally.
 $EndSCHEMATC
